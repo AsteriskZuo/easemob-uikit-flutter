@@ -41,7 +41,7 @@ environment:
   flutter: ">=3.3.0"
 ```
 
-- ios 11+
+- iOS 13.0+
 - android minSDKVersion 24
 
 # 安装
@@ -49,6 +49,8 @@ environment:
 ```bash
 flutter pub add em_chat_uikit
 ```
+
+UIKit 3.0.0 使用 `im_flutter_sdk` 5.x，与 UIKit 2.3.x 不兼容。应用每次启动时需显式使用 Token 登录，并调整连接回调、已读回执、群配置和数据同步设置。迁移详情见 [CHANGELOG](CHANGELOG_zh.md) 及下方初始化、登录示例。已使用 2.4.0 的应用迁移至 3.0.0 时，无需额外调整 API。
 
 # 结构
 

@@ -1,3 +1,11 @@
+## 3.0.0
+- Versioning: Re-release the SDK 5.0 integration from 2.4.0 as a major version to reflect its incompatibility with 2.3.x. No additional runtime or public API changes from 2.4.0.
+- Migration from 2.3.x: Use explicit token login on each application start; password login and SDK automatic login are no longer available.
+- Migration from 2.3.x: Update connection callbacks, read receipts, group configurations, and renamed or removed APIs as listed under 2.4.0 below.
+- Migration from 2.3.x: Enable conversation, contact, and joined-group data synchronization during initialization; list data now comes from the synchronized local database.
+- Docs: Correct the README minimum iOS version to 13.0, matching the plugin and SDK requirements.
+- Packaging: Exclude local dependency override files and their backups from the published package.
+
 ## 2.4.0
 - Upgrade: Dependency SDK to 5.0.0.
 - Breaking: Remove password login and automatic-login handling; UIKit and its example now use explicit token login only.

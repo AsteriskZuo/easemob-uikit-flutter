@@ -6,7 +6,7 @@
 
 | Item | Current value |
 |---|---|
-| Package version | `2.4.0` |
+| Package version | `3.0.0` |
 | `im_flutter_sdk` | `^5.0.0` |
 | `chat_uikit_theme` | `1.0.4` |
 | `chat_uikit_keyboard_panel` | `0.1.2` |
@@ -67,7 +67,7 @@ The event flow is:
 ## State And Lifecycle Rules
 
 - Initialize `ChatUIKit.instance` with `Options` before login or UI use. For SDK 5.0 data-backed lists, preserve the required `ChatDataSyncType` flags for conversations, contacts, and joined groups.
-- Use token login. Password login and SDK automatic-login handling were removed for the 2.4.0 / SDK 5.0 integration.
+- Use token login. Password login and SDK automatic-login handling were removed for the SDK 5.0 integration, released as UIKit 3.0.0 to mark the breaking changes from 2.3.x.
 - Add and remove the same observer instance symmetrically. Controllers that register with `ChatUIKit.instance` must unregister in `dispose` and dispose owned notifiers.
 - Respect `hasDisposed` or equivalent guards before notifying UI state after asynchronous work.
 - Preserve `_BuildSafeValueNotifier` behavior in the list-controller base: notifications requested during widget build are deferred to a post-frame callback to avoid framework build errors.
