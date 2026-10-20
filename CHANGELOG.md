@@ -6,7 +6,7 @@
 - Docs: Correct the README minimum iOS version to 13.0, matching the plugin and SDK requirements.
 - Packaging: Exclude local dependency override files and their backups from the published package.
 
-## 2.4.0 (Superseded by 3.0.0)
+## 2.4.0 (Retracted; superseded by 3.0.0)
 - Upgrade: Dependency SDK to 5.0.0.
 - Breaking: Remove password login and automatic-login handling; UIKit and its example now use explicit token login only.
 - Breaking: Adapt connection callbacks, automatic data synchronization, message read receipts, group configurations, and renamed SDK APIs to SDK 5.0.
