@@ -28,7 +28,7 @@
 
 ## 2.3.2
 - Upgrade: Dependency SDK to 4.19.3.
-- Fix: Import conflict of same-named types such as `MessageType` when integrated in the same project as `im_flutter_sdk`.
+- Fix: Import conflict of same-named types such as `MessageType` when integrated in the same project as the chat SDK.
 - Docs: Update the Android minimum version note in the README to minSDKVersion 24.
 - Refactor: Use neutral native plugin names to support cross-repository sync.
 
@@ -90,7 +90,7 @@
 
 - Change the custom list item name.
 - Change the theme switching method.
-- Change the `im_flutter_sdk` dependency version to `4.8.2`.
+- Change the chat SDK dependency version to `4.8.2`.
 - Change `ChatUIKitBottomSheetItem` to `ChatUIKitEventAction`.
 - Change the Flutter dependency version to `flutter: '>=3.19.0'`.
 

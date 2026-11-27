@@ -51,7 +51,7 @@ environment:
 flutter pub add em_chat_uikit
 ```
 
-UIKit 3.0.0 uses `im_flutter_sdk` 5.x and contains breaking changes from UIKit 2.3.x. Applications must explicitly log in with a token on each start and update their connection callbacks, read receipts, group configuration, and data synchronization setup. See the [CHANGELOG](CHANGELOG.md) and the initialization and login examples below for migration details. Applications already using 2.4.0 can move to 3.0.0 without additional API changes.
+Applications must explicitly log in with a token on each start and update their connection callbacks, read receipts, group configuration, and data synchronization setup. See the [CHANGELOG](CHANGELOG.md) and the initialization and login examples below for migration details. 
 
 # Structure
 
@@ -139,7 +139,7 @@ void main() {
 
 ```
 
-5. Log in to the UIKit. SDK 5.0 only supports token login and does not
+5. Log in to the UIKit. The chat SDK only supports token login and does not
    automatically restore a login session, so the app must log in explicitly.
 
 ```dart
