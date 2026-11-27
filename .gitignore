@@ -29,7 +29,6 @@ migrate_working_dir/
 .packages
 build/
 
-
 # Created by https://www.toptal.com/developers/gitignore/api/windows,macos,linux,flutter
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,linux,flutter
 
@@ -39,7 +38,6 @@ build/
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
-.fvm/flutter_sdk
 .packages
 .pub-cache/
 .pub/
@@ -122,7 +120,6 @@ lib/generated_plugin_registrant.dart
 # Icon must end with two \r
 Icon
 
-
 # Thumbnails
 ._*
 
@@ -175,3 +172,8 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,flutter
 pubspec_overrides.yaml
 pubspec_overrides.yaml.bk
+
+# FVM Version Cache
+.fvm/
+.vscode/
+.fvmrc
