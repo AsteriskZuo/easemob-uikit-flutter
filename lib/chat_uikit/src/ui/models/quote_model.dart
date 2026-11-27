@@ -50,6 +50,10 @@ extension MessageTypeExt on MessageType {
         return 'custom';
       case MessageType.CMD:
         return 'cmd';
+      default:
+        // Fallback for message types added after this switch was written
+        // (e.g. MULTIBODY in SDK 5.2.0); the quote type tag degrades to TXT.
+        return 'txt';
     }
   }
 }
